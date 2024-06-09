@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Page</title>
+    <link rel="stylesheet" href="{% static 'style7.css' %}">
+</head>
+<body>
+    <h1>Client Page</h1>
+    <h2>Your Requests</h2>
+    <ul>
+        {% for request in requests %}
+            <li>
+                {{ request.description }} - {{ request.master.name }} - {{ request.status }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'create_request' %}">Create New Request</a>
+    <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
+
