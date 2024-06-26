@@ -1,0 +1,25 @@
+body {
+    background-image: url("image/Photo.png");
+    margin: 14%;
+    padding-left: 28%;
+}
+
+.header-button {
+    background-color: #15525b;
+    padding: 14px 28px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    transition: background-color 0.2s linear;
+}
+
+.header-button:hover {
+    background-color: #237753;
+}
+
+.button {
+    color: #8e9122;
+    margin-left: -40px;
+}
