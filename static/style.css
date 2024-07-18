@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("image/Photo2.png");
+    margin-top: 1px;
+    margin-left: -37%;
+}
+
+.container {
+    color: #8e9122;
+    width: 45%;
+    margin: 0 auto;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-top: 20px;
+    margin-left: 1%;
+}
+
+input[type="text"],
+textarea {
+    width: 20%;
+    padding: 0px;
+    margin-bottom: 0px;
+    border: 1px solid #141414;
+    border-radius: 9px;
+    box-sizing: border-box
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 15%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

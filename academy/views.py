@@ -70,3 +70,25 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('login')
+from django.shortcuts import render, redirect
+from .forms import MasterSignUpForm, ClientSignUpForm
+
+def register_master(request):
+    if request.method == 'POST':
+        form = MasterSignUpForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')  # Перенаправление на страницу входа после регистрации
+    else:
+        form = MasterSignUpForm()
+    return render(request, 'registration/register.html', {'form': form})
+
+def register_client(request):
+    if request.method == 'POST':
+        form = ClientSignUpForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')
+    else:
+        form = ClientSignUpForm()
+    return render(request, 'registration/register.html', {'form': form})
