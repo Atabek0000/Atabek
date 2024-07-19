@@ -19,6 +19,10 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'techno.sench.student-project-it-academy.tw1.ru',
 ]
+CSRF_TRUSTED_ORIGINS = [
+    'https://techno.sench.student-project-it-academy.tw1.ru',
+]
+
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 # Application definition
