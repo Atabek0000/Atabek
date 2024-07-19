@@ -21,6 +21,7 @@ ALLOWED_HOSTS = [
 ]
 CSRF_TRUSTED_ORIGINS = [
     'https://techno.sench.student-project-it-academy.tw1.ru',
+    'https://www.techno.sench.student-project-it-academy.tw1.ru'
 ]
 
 CSRF_COOKIE_SECURE = True
