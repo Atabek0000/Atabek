@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .models import Request, Client, Master
-from .forms import RequestForm
+from .forms import RequestForm, MasterSignUpForm, ClientSignUpForm
 from django.contrib.auth import authenticate, login, logout
 
 
@@ -70,8 +70,7 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('login')
-from django.shortcuts import render, redirect
-from .forms import MasterSignUpForm, ClientSignUpForm
+
 
 def register_master(request):
     if request.method == 'POST':
@@ -82,6 +81,7 @@ def register_master(request):
     else:
         form = MasterSignUpForm()
     return render(request, 'registration/register.html', {'form': form})
+
 
 def register_client(request):
     if request.method == 'POST':

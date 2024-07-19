@@ -25,7 +25,7 @@
 
         <div class="nav">
           <a class="nav-item" href="{% url 'register-master' %}">Зарегистрироваться как Мастер</a>
-            <a class="nav-item" href="{% url 'register-client' %}">Зарегистрироваться как Клиент</a>
+          <a class="nav-item" href="{% url 'register-client' %}">Зарегистрироваться как Клиент</a>
           <a class="nav-item" href="{% url 'o_nas' %}">O нас</a>
           <a class="nav-item" href="{% url 'login' %}">Вход к заявкам</a>
           <a class="nav-item" href="{% url 'create_request' %}">Создать заявку</a>
@@ -63,7 +63,8 @@
             </button>
 
             <div id="menu" class="burger-slide disp">
-                <a class="nav-item block" href="{% url 'register' %}">Зарегистрироваться</a>
+                <a class="nav-item" href="{% url 'register-master' %}">Зарегистрироваться как Мастер</a>
+                <a class="nav-item" href="{% url 'register-client' %}">Зарегистрироваться как Клиент</a>
                 <a class="nav-item block" href="{% url 'o_nas' %}">O нас</a>
                 <a class="nav-item" href="{% url 'login' %}">Вход к заявкам</a>
                 <a class="nav-item" href="{% url 'create_request' %}">Создать заявку</a>
@@ -84,7 +85,7 @@
           </div>
 
           <div class="header-suptitle">
-            Магазин лучших техников
+            Лучший сайт по заявкам
           </div>
 
           <div class="header-btn">
@@ -268,21 +269,21 @@
   <div class="container">
 
       <div class="coment-text">
-        Технологический процесс (ТП) – часть производственного процесса, содержащая целенаправленные
-        действия по изменению и (или) определению состояния предмета труда. К предметам труда относятся
-        заготовки и изделия. Технологическая операция – законченная часть технологиче- ского процесса, выполняемая на одном рабочем месте.
+        Django Framework: начинаюший разработки веб-приложений с использованием фреймворка Django. Включает в себя создание моделей, видов, шаблонов и маршрутов.
+        Аутентификация и Авторизация: Реализация систем регистрации, входа и выхода для пользователей. Настройка разрешений и уровней доступа.
+        Работа с Базами Данных: Использование ORM Django для взаимодействия с базами данных. Опыт работы с PostgreSQL, MySQL и SQLite.
       </div>
 
       <div class="coment-image">
-          <img src="{% static 'image/beard-1845166_1920 1.png' %}" class="coment-img" alt="">
+          <img src="{% static 'image/photo_5249004516446166672_y.jpg' %}" class="coment-img" alt="">
       </div>
 
       <div class="coment-type">
-          Посититель
+          Владелец !!!
       </div>
 
       <div class="coment-name">
-          Николай
+          Акылбеков Атабек !
       </div>
 
   </div>

@@ -72,7 +72,7 @@ body {
     background-color: #FF7400;
     color: #fff;
     text-decoration: none;
-    padding: 14px 18px;
+    padding: 10px 15px;
     font-weight: 700;
     border-radius: 15px;
     transition: background-color 0.2s linear ;
@@ -126,7 +126,7 @@ body {
 
 .header-button {
     background-color: #FF7400;
-    padding: 14px 28px;
+    padding: 10px 20px;
     color: #fff;
     font-size: 14px;
     font-weight: 700;
@@ -384,6 +384,8 @@ body {
 
 .coment-img {
     border-radius: 50px;
+    width: 100px;
+    height: 105px;
 }
 
 .coment-image {
