@@ -14,7 +14,7 @@
     <ul>
         {% for request in requests %}
             <li>
-                {{ request.description }} - {{ request.master.name }} - {{ request.status }}
+                {{ request.description }} - {{ request.master.name }} > {{ request.status }}
             </li>
         {% endfor %}
     </ul>

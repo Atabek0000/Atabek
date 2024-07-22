@@ -15,7 +15,7 @@
             <li>
                 {{ request.description }} - {{ request.client.name }} - {{ request.status }}
                 {% if request.status == 'Pending' %}
-                    <a href="{% url 'reject_request' request.id %}">Принял</a>
+                    <a href="{% url 'reject_request' request.id %}">Принять</a>
                     <a href="{% url 'accept_request' request.id %}">Отклонить</a>
                 {% endif %}
             </li>

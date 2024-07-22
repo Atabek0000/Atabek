@@ -37,7 +37,7 @@ def master_page(request):
 def accept_request(request, request_id):
     request_obj = Request.objects.get(id=request_id)
     if request.user.master == request_obj.master:
-        request_obj.status = 'Otklonil'
+        request_obj.status = 'Отклонить'
         request_obj.save()
     return redirect('master_page')
 
@@ -46,7 +46,7 @@ def accept_request(request, request_id):
 def reject_request(request, request_id):
     request_obj = Request.objects.get(id=request_id)
     if request.user.master == request_obj.master:
-        request_obj.status = 'Accepted'
+        request_obj.status = 'Принять'
         request_obj.save()
     return redirect('master_page')
 

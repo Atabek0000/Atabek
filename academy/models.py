@@ -22,7 +22,7 @@ class Request(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
     master = models.ForeignKey(Master, on_delete=models.CASCADE)
     description = models.TextField()
-    status = models.CharField(max_length=20, choices=[('Pending', 'Pending'), ('Accepted', 'Accepted'), ('Otklonil', 'Otklonil')], default='Pending')
+    status = models.CharField(max_length=20, choices=[('В ожидании', 'В ожидании'), ('Принял', 'Принял'), ('Отклонил', 'Отклонил')], default='В ожидании')
 
     def __str__(self):
         return f'{self.client.name} - {self.master.name}'

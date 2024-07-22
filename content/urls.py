@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     path('', views.main, name='home'),
     path('o_nas/', views.o_nas, name='o_nas'),
+    path('weather_news/', views.weather_news, name='weather_news'),
 
     path('progress/', views.progress_list, name='progress_list'),
     path('create/', views.progress_create, name='progress_create'),
